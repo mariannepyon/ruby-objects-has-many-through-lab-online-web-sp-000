@@ -17,7 +17,7 @@ class Genre
 
   def artists
     Artist.all.select do |artists|
-      binding.pry
+      #binding.pry
       artists.genre == self
     end
   end
