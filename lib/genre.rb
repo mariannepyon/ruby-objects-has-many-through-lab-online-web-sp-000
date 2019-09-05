@@ -16,10 +16,8 @@ class Genre
   end
 
   def artists
-    Artist.all.select do |artists|
-      #binding.pry
-      artists.genre == self
-    end
+      songs.map {|song| song.artist}
+
   end
 
   def self.all
