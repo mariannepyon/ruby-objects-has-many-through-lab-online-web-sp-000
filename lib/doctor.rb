@@ -1,4 +1,4 @@
-binding 'pry'
+require 'pry'
 class Doctor
 
   attr_accessor :name
